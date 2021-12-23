@@ -1,0 +1,550 @@
+/*MOBILE FIRST*/
+
+.separador {
+  margin: 40px auto;
+  display: flex;
+  width: 250px;
+}
+
+.menu-container {
+  width: 95%;
+  margin: 15px auto;
+  display: flex;
+  height: 100px;
+  font-size: 2em;
+  position: relative;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 8px;
+  background: #e95b2d;
+  overflow: hidden;
+
+  .menu-img-container {
+    background-image: url(../Steak+Gonzalez/Images/banner-menu.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all ease 1s;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: white;
+
+    h1 {
+      font-size: 25px;
+      font-family: "Ubuntu Condensed", sans-serif;
+      font-weight: 400;
+      text-align: center;
+      display: block;
+      margin-top: 30px;
+    }
+  }
+  img {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+}
+
+.cards-container {
+  width: 95%;
+  margin: 15px auto;
+  margin-top: 25px;
+  padding-bottom: 25px;
+  max-width: 1300px;
+  overflow: unset;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  padding-top: 15px;
+  margin: auto;
+
+  .card-container {
+    height: 100px;
+    width: 100%;
+    font-size: 2em;
+    position: relative;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 8px;
+    background: rgb(233, 91, 45);
+    overflow: hidden;
+    margin: 8px auto;
+
+    a {
+      width: 100%;
+      height: 100%;
+      -webkit-box-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      justify-content: center;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      transition: all ease 0.5s;
+      text-decoration: none;
+      color: white;
+
+      &:hover {
+        background-image: rgba(233, 91, 45, 0.4), url(../img/Menu-Sandwich.jpg);
+        opacity: 0.5;
+      }
+
+      h2 {
+        font-size: 25px;
+        font-family: "Ubuntu Condensed", sans-serif;
+        font-weight: 400;
+      }
+    }
+
+    .active {
+      background-image: rgba(233, 91, 45, 0.4), url(../img/Menu-Sandwich.jpg);
+      opacity: 0.5;
+    }
+
+    .carta-completa {
+      background-image: url("../Steak+Gonzalez/Images/card-cartacompleta.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .platos-principales {
+      background-image: url("../Steak+Gonzalez/Images/card-platoprincipal.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      transition: all ease 1s;
+    }
+
+    .entradas {
+      background-image: url("../Steak+Gonzalez/Images/bloom\ petals.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      transition: all ease 1s;
+    }
+
+    .sandwiches {
+      background-image: url("../Steak+Gonzalez/Images/card-burger.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      transition: all ease 1s;
+    }
+
+    .tragos {
+      background-image: url("../Steak+Gonzalez/Images/card-bebidas.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      transition: all ease 1s;
+    }
+
+    .postres {
+      background-image: url("../Steak+Gonzalez/Images/card-postres.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      transition: all ease 1s;
+    }
+  }
+}
+
+.text-menu {
+  text-align: center;
+}
+
+.carta-menu-container {
+  .grilla-menu-desplegado {
+    grid-template-columns: repeat(1, 1fr);
+    margin-bottom: 25px;
+    gap: 80px 80px;
+    display: grid;
+    margin: 30px;
+
+    .item-grilla-menu-desplegado {
+      display: block;
+      flex-direction: row-reverse;
+
+      .img-grilla-menu-desplegado {
+        height: 310px;
+        padding-bottom: 60px;
+        width: 100%;
+        order: 1;
+        border-radius: 8px;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          background-color: rgb(233, 91, 45);
+          border-radius: 8px;
+        }
+      }
+
+      .texto-grilla-menu-desplegado {
+        padding: 0 10px 10px 10px;
+        width: 100%;
+
+        h2 {
+          text-align: center;
+        }
+
+        p {
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+
+//FOOTER
+.footer {
+    .footer-right {
+      background-color: rgba(233, 91, 45, 0.9);
+      height: 60px;
+      border-radius: 16px;
+      width: 100%;
+      display: -webkit-box;
+      grid-template-columns: 1fr;
+      -webkit-box-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      justify-content: center;
+  
+      a {
+        text-decoration: none;
+        color: white;
+        text-align: center;
+
+      }
+    }
+  
+    .footer-left {
+      font-size: 0.8em;
+      font-family: "Roboto Condensed", sans-serif;
+      font-weight: 600;
+      display: inline-block;
+      padding: 7px 17px;
+      border-radius: 8px;
+      border: 1px solid #fff;
+      color: white !important;
+      -webkit-font-smoothing: antialiased;
+      display: none;
+  
+      a {
+        text-decoration: none;
+        color: white;
+        padding: 10px;
+      }
+    }
+  
+    .legales {
+      margin: 10px auto;
+      display: flex;
+      text-align: center;
+      width: 300px;
+  
+      span {
+        width: 300px;
+      }
+    }
+  
+    .link {
+      margin: 10px auto;
+      text-align: center;
+      display: block; 
+  
+      a {
+        text-align: center;
+        margin: 6px;
+        color: black;
+        text-decoration: none;
+      }
+    }
+  }
+
+/*MEDIA QUERIES PARA DISPOSITIVOS MAYORES A 540PX Y MENORES A 720PX*/
+
+@media screen and (min-width: 540px) {
+  /*SECCION 1*/
+
+  .text-menu {
+    text-align: center;
+  }
+
+  .menu-container {
+    .menu-img-container {
+      h1 {
+        font-family: "Ubuntu Condensed", sans-serif;
+        font-weight: 400;
+        font-size: 35px;
+        text-align: center;
+        display: block;
+        margin-top: 60px;
+      }
+    }
+  }
+
+  .menu-container {
+    height: 150px;
+  }
+
+  .separador {
+    width: 350px;
+  }
+  .cards-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+
+    .card-container {
+      margin: 5px auto;
+      height: 120px;
+    }
+  }
+
+  .carta-menu-container {
+    .grilla-menu-desplegado {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+
+      .item-grilla-menu-desplegado {
+        display: block;
+
+        .img-grilla-menu-desplegado {
+          width: 100%;
+          margin: auto;
+        }
+
+        .texto-grilla-menu-desplegado {
+          width: 100%;
+          margin: auto;
+
+          h2 {
+            text-align: center;
+            justify-content: center;
+          }
+
+          p {
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+
+  .footer {
+    .footer-right {
+      height: 80px;
+
+      a {
+        width: 100%;
+      }
+    }
+
+    .footer-left {
+      margin: auto;
+      float: center;
+    }
+
+    .link {
+      display: block;
+      width: auto;
+    }
+  }
+}
+
+/*MEDIA QUERIES PARA DISPOSITIVOS MAYORES A 720PX Y MENORES A 996PX*/
+
+@media screen and (min-width: 720px) {
+    /*SECCION 1*/
+  
+    .text-menu {
+      text-align: center;
+    }
+  
+    .menu-container {
+      .menu-img-container {
+        h1 {
+          font-family: "Ubuntu Condensed", sans-serif;
+          font-weight: 400;
+          font-size: 35px;
+          text-align: center;
+          display: block;
+          margin-top: 110px;
+        }
+      }
+    }
+  
+    .menu-container {
+      height: 250px;
+    }
+  
+    .separador {
+      width: 350px;
+    }
+    .cards-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 5px;
+  
+      .card-container {
+        margin: 5px auto;
+        height: 120px;
+      }
+    }
+  
+    .carta-menu-container {
+      .grilla-menu-desplegado {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+  
+        .item-grilla-menu-desplegado {
+          display: flex;
+  
+          .img-grilla-menu-desplegado {
+            width: 100%;
+            margin: auto;
+          }
+  
+          .texto-grilla-menu-desplegado {
+            width: 100%;
+            margin: 0 auto auto auto;
+  
+            h2 {
+              text-align: center;
+              justify-content: center;
+            }
+  
+            p {
+              text-align: center;
+            }
+          }
+        }
+      }
+    }
+  
+    .footer {
+      .footer-right {
+        height: 80px;
+  
+        a {
+          width: 100%;
+          padding: 30px;
+        }
+      }
+  
+      .footer-left {
+        margin: auto;
+        display: inline-block;
+      }
+  
+      .link {
+        display: block;
+        width: auto;
+      }
+    }
+  
+    /*SECCION 1*/
+  }
+
+
+
+
+
+  @media screen and (min-width: 960px) {
+    /*SECCION 1*/
+  
+    .text-menu {
+      text-align: center;
+    }
+  
+    .menu-container {
+      .menu-img-container {
+        h1 {
+          font-family: "Ubuntu Condensed", sans-serif;
+          font-weight: 400;
+          font-size: 35px;
+          text-align: center;
+          display: block;
+          margin-top: 110px;
+        }
+      }
+    }
+  
+    .menu-container {
+      height: 250px;
+    }
+  
+    .separador {
+      width: 600px;
+    }
+    .cards-container {
+      display: flex;
+  
+      .card-container {
+        margin: 5px auto;
+        height: 120px;
+      }
+    }
+  
+    .carta-menu-container {
+      .grilla-menu-desplegado {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 4px 4px;
+  
+        .item-grilla-menu-desplegado {
+          display: flex;
+  
+          .img-grilla-menu-desplegado {
+            width: 40%;
+            margin: auto;
+          }
+  
+          .texto-grilla-menu-desplegado {
+            width: 60%;
+            margin: 0 auto auto auto;
+  
+            h2 {
+              text-align: left;
+              justify-content: left;
+            }
+  
+            p {
+        
+                flex-wrap: wrap;
+              text-align: left;
+            }
+          }
+        }
+      }
+    }
+  
+    .footer {
+      .footer-right {
+        height: 80px;
+  
+        a {
+          width: 100%;
+        }
+      }
+  
+      .footer-left {
+        margin: auto;
+        float: center;
+      }
+  
+      .link {
+        display: flex; 
+        justify-content: center;
+        margin: auto;
+      }
+    }
+  
+    /*SECCION 1*/
+
+  }

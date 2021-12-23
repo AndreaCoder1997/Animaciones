@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap");
+@import "../scss/_seccion1.scss";
+@import "../scss/_seccion2.scss";
+@import "../scss/_seccion3.scss";
+@import "../scss/_seccion4.scss";
+@import "../scss/_seccion5.scss";
+
+
+
+
+
+body {
+    background-color: #f6f2e8;
+}
+
+.navbar-nav {
+  margin-left: auto;
+}
+
+.redes {
+  display: flex;
+  border-left: 1px solid black;
+  margin-left: 15px;
+
+  .icon-f {
+    font-size: 1.9em;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  .icon-i {
+    font-size: 1.9em;
+    margin-left: 15px;
+    margin-right: 5px;
+  }
+}
+
+.menuprincipal-img-container {
+  display: flex;
+  width: fit-content;
+  height: 800px;
+  margin: 10px auto;
+
+  img {
+    display: flex;
+    padding: 10px;
+    width: 650px;
+    height: 100%;
+  }
+}
+
+.carousel-home {
+  padding: 20px;
+
+  .inner {
+    border-radius: 30px;
+  }
+}
+
+
+
+
+
+header {
+  nav {
+    div {
+      .navbar-brand {
+        background-image: url(../Steak+Gonzalez/Images/logo.svg);
+        background-size: contain;
+        transition: all ease 1s;
+        width: 168px;
+        height: 62px;
+        text-decoration: none;
+        color: white;
+    
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+  
